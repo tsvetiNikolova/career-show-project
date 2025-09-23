@@ -57,12 +57,13 @@ function App() {
           logo={selectedCompany.logo}
           name={selectedCompany.name}
           description={selectedCompany.description}
+          userName={userName}
         />
         </TimerProvider>
       )
     }
     else if (page === 4) {
-      return <Completed></Completed>
+      return <Completed userName={userName}></Completed>
     }
   };
 

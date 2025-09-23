@@ -12,7 +12,7 @@ function HomePage({ setPage, setSelectedCompany, companies, userName }: HomePage
 
     return (
         <div>
-            <Nav page={2}></Nav>
+            <Nav page={2} userName={userName}></Nav>
             <br></br>
             <img src={smallDiadrawLogo} alt='diadraw logo' />
             <h4>Welcome, {userName}</h4>

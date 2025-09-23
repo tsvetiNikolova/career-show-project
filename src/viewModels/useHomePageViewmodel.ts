@@ -15,7 +15,7 @@ export type HomePageProps = {
     userName: string;
 }
 
-let completed:number = 32;
+let completed:number = 3;
 
 function useHomePageViewmodel({ setPage, setSelectedCompany }: HomePageProps) {
 

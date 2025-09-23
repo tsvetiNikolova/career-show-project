@@ -10,15 +10,16 @@ type CompanyProps = {
     logo: string;
     name: string;
     description: string;
+    userName:string;
 }
 
-function Company({ page, setPage, logo, name, description }: CompanyProps) {
+function Company({ page, setPage, logo, name, description, userName }: CompanyProps) {
     const { isIndustryOpen, setIsIndustryOpen, selectedIndustry, isWorkModelOpen, setIsWorkModelOpen, selectedWorkModel, optionsIndustry, optionsWorkModel, handleIndustryChange, handleWorkModelChange }
         = useCompanyViewmodel()
 
     return (
         <div>
-            <Nav page={3}></Nav>
+            <Nav page={3} userName={userName}></Nav>
             <button id='goBackBtn' style={{ display: 'flex', gap: '10px' }} onClick={() => { setPage(page - 1) }}><img src={arrowLeft} /> Back to Companies </button>
             <Card
                 logo={logo}

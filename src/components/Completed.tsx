@@ -1,12 +1,11 @@
 import Nav from "./Nav";
 import trophy from '../assets/trophy.svg'
-import time from '../assets/access_time.svg'
 import diadrawLogo from '../assets/diadrawLogo.svg'
 
-function Completed() {
+function Completed({userName}:{userName:string}) {
     return (
         <div>
-            <Nav page={4}></Nav>
+            <Nav page={4} userName={userName}></Nav>
             <img src={trophy} style={{ width: '15vw'}} />
             <h3 style={{ fontWeight: 400, marginBottom:'2em' }}>Game Completed!</h3>
             <div className="performanceCard" style={{
