@@ -20,12 +20,8 @@ body{
 }
 @media (min-width: 420px){
 
-  .performanceCard ol{
-    left: 20px!important;;
-  }
-
   .performanceCard {
-  width: 65%;
+  width: 75%;
 }
 
 }
