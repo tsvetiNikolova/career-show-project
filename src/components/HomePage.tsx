@@ -14,12 +14,10 @@ function HomePage({ setPage, setSelectedCompany, companies, userName }: HomePage
         <div>
             <Nav page={2} userName={userName}></Nav>
             <br></br>
-            <img src={smallDiadrawLogo} alt='diadraw logo' />
-            <h4>Welcome, {userName}</h4>
-            <p style={{ color: '#FF294D' }}>Explore Connect Grow</p>
-            <ProgressBar progress={completed}></ProgressBar>
             <br></br>
-            <p style={{ fontWeight: 500, width: '80vw', margin: 'auto' }}>Click on any company to learn more and answer their challenge questions</p>
+            <h4 style={{ fontWeight: 500, width: '60vw', margin: 'auto' }}>Click on any company to learn more and answer their challenge questions</h4>
+            <br></br>
+            <ProgressBar progress={completed}></ProgressBar>
             <br></br>
             <br></br>
             <Card
