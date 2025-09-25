@@ -1,4 +1,5 @@
 type CardProps = {
+    standNum?: number;
     logo: string;
     name: string;
     description: string;
@@ -6,7 +7,7 @@ type CardProps = {
     onClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
-function Card({ logo, name, description, color, onClick }: CardProps) {
+function Card({ standNum, logo, name, description, color, onClick }: CardProps) {
     return (
         <div className="card" onClick={onClick}
             style={{
@@ -14,6 +15,9 @@ function Card({ logo, name, description, color, onClick }: CardProps) {
                 backgroundColor: color,
                 boxShadow: color === '#321E41' ? 'none' : '0px 60px 70px 20px #00000333'
             }}>
+                
+            <h5 id="standNum" style={{display:color === '#321E41' ? 'none' : 'block'}}>{standNum}<br></br>щанд</h5>
+
             <div style={{
                 backgroundColor: 'white',
                 width: 'fit-content',
@@ -25,7 +29,8 @@ function Card({ logo, name, description, color, onClick }: CardProps) {
                 alignItems: 'center',
                 justifyContent: 'center'
             }}>
-                <img src={logo} alt="company logo" />
+                    <img src={logo} alt="company logo" />
+                
             </div>
             <h5 style={{
                 color: color === '#321E41' ? 'white' : 'black',

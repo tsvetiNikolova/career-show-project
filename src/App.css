@@ -18,6 +18,14 @@ body{
     width: 33vw;
   }
 }
+
+@media (max-width:400px) {
+  #standNum{
+    position: relative;
+    margin: 1em 0 -1.5em;
+  }
+}
+
 @media (min-width: 420px){
 
   .performanceCard {

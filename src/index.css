@@ -87,7 +87,7 @@ p {
   text-transform: uppercase;
 }
 
-.textAlignLeft{
+.textAlignLeft {
   text-align: left;
 }
 
@@ -104,17 +104,17 @@ p {
   height: 85px;
   display: flex;
   justify-content: space-between;
-  padding: 0 1.5em ;
+  padding: 0 1.5em;
   align-items: center;
 }
 
-.subnav{
+.subnav {
   background-color: #FFA203;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5em ;
+  padding: 0 1.5em;
 }
 
 #goBackBtn {
@@ -149,7 +149,7 @@ button {
   text-align: left;
 }
 
-input{
+input {
   background-color: #F6F8F0;
 }
 
@@ -224,7 +224,7 @@ input[type="checkbox"]:checked::after {
   border-radius: 8px;
   width: 70vw;
   margin: auto;
-  padding: 2em 1em 0.8em 1em;
+  padding: 0 1em 2em 1em;
   margin-bottom: 30px;
 }
 
@@ -245,6 +245,12 @@ input[type="checkbox"]:checked::after {
   padding: 1.5em;
   border-radius: 6px;
   margin-bottom: 5em;
+}
+
+
+#standNum {
+  position: absolute;
+  margin: 2.8em 0px;
 }
 
 .questionsCard p,
@@ -297,10 +303,11 @@ input[type='textbox'] {
   border-bottom: 1px solid #eee;
 }
 
-.performanceCard ol li{
+.performanceCard ol li {
   margin-bottom: 14px;
 }
-.redUnderline{
+
+.redUnderline {
   color: #FF294D;
   font-weight: 350;
   text-decoration: underline;
